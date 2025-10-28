@@ -94,3 +94,9 @@ Telecommunication_Customer_Churn/
 
 This project provides a data-driven approach to identify customers likely to churn.
 With predictive insights, telecom companies can take proactive steps to retain customers and improve satisfaction.
+
+
+## 🚀 Live Demo
+
+You can try the deployed Streamlit app here:  
+👉 [https://churn-prediction-data.streamlit.app](https://churn-prediction-data.streamlit.app)
