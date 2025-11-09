@@ -215,7 +215,7 @@ Version Control	Git + GitHub
 
 🏃 Run Locally
 # Clone repo
-git clone https://github.com/YOUR_USER/YOUR_REPO.git
+git clone(https://github.com/shashankphenomeno111/Data-science-Project-TELE-COMMUNICATION-.git)
 cd YOUR_REPO
 
 # Install deps
