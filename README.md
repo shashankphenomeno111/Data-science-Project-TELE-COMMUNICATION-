@@ -211,7 +211,7 @@ Version Control	Git + GitHub
 
 (https://churn-prediction-data.streamlit.app/)
 
-<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/ad7d0800-9c3d-47c6-b603-0e0f9dab7efe" />
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/dabaeddb-1500-40ca-bc68-b36ca8e28632" />
 
 🏃 Run Locally
 # Clone repo
