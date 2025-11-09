@@ -11,7 +11,7 @@ An end-to-end machine learning project to predict customer churn in telecom usin
 
 🔗 Live Application:
 
-https://YOUR_DEPLOYED_STREAMLIT_URL
+(https://churn-prediction-data.streamlit.app/)
 
 ✅ Table of Contents
 
@@ -81,9 +81,8 @@ churn	Target (Yes/No)
 
 Total Customers → 667
 
-<p align="center"> <img src="/images/dataset_preview.png" width="700"/> </p>
-🔁 Workflow
-<p align="center"> <img src="/images/workflow.png" width="850"/> </p>
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/decaafe0-9554-44e5-ac2c-9b95aff52385" />
+
 
 1️⃣ Data Loading
 2️⃣ Cleaning & Preprocessing
@@ -100,7 +99,8 @@ Total Customers → 667
 ✅ Higher customer service calls → churn
 ✅ Usage patterns differ between churn & non-churn
 
-<p align="center"> <img src="/images/eda_heatmap.png" width="750"/> </p>
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/58319ee7-229c-4e32-a5a4-939a666e95f1" />
+
 🤖 Modeling
 
 We trained multiple models:
@@ -113,17 +113,39 @@ XGBoost	✅ 98% (Best)
 Final model → XGBoost
 Reason → Highest accuracy + strong generalization
 
-📊 Confusion Matrix & Explanation
+✅ Classification Report
+              precision    recall  f1-score   support
 
-✅ Final model: XGBoost
-✅ Test samples: 667
+           0       0.98      1.00      0.99       566
+           1       1.00      0.87      0.93       101
 
-	Predicted No	Predicted Yes
-Actual No	566	0
-Actual Yes	0	101
+    accuracy                           0.98       667
+   macro avg       0.99      0.94      0.96       667
+weighted avg       0.98      0.98      0.98       667
 
-✅ Accuracy → 98%
-✅ Precision / Recall → Excellent
+🔍 Interpretation:
+
+✅ Class 0 perfectly recalled (1.00)
+✅ Class 1 is well captured (recall 0.87)
+✅ Very high precision for both classes
+✅ Overall model is highly reliable
+
+✅ Conclusion
+
+✔ XGBoost model achieved 98% accuracy
+✔ Excellent ability to detect non-churn customers
+✔ Strong performance on churn prediction
+
+🔹 Key churn indicators:
+
+International plan = higher churn
+
+High customer service calls
+
+Usage patterns
+
+✅ Business Value:
+Allows targeted retention → reduced churn → increased revenue
 
 Inference:
 
@@ -187,9 +209,10 @@ Version Control	Git + GitHub
 
 🔗 Live App →
 
-https://YOUR_STREAMLIT_APP_URL
+(https://churn-prediction-data.streamlit.app/)
 
-<p align="center"> <img src="/images/app_ui.png" width="750"/> </p>
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/ad7d0800-9c3d-47c6-b603-0e0f9dab7efe" />
+
 🏃 Run Locally
 # Clone repo
 git clone https://github.com/YOUR_USER/YOUR_REPO.git
@@ -218,12 +241,9 @@ streamlit run app.py
 
 👤 Author
 
-Shashank
+Shashank R
 
-📧 Email :
+📧 Email :shashankphenomenon@gmail.com
 🔗 LinkedIn :
 
-If you found this project helpful —
-⭐ Please star this repository!
 
-<p align="center"> ⭐⭐⭐⭐⭐ </p>
