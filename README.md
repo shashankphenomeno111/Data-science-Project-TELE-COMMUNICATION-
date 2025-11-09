@@ -1,6 +1,7 @@
 <h1 align="center">
-  <b>🔷🔹 TELECOMMUNICATION CUSTOMER CHURN PREDICTOR 🔹🔷</b>
+  <b>📡 TELECOMMUNICATION CUSTOMER CHURN PREDICTOR</b>
 </h1>
+
 
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/166e0daa-ecf1-4389-bbd2-d04725ffcf50" />
 
@@ -246,7 +247,7 @@ streamlit run app.py
 
 **Shashank R**  
 A passionate Data Science enthusiast focused on building real-world predictive ML models, 
-recommendation systems, and end-to-end product deployments.
+Binary classification, and end-to-end product deployments.
 
 📧 Email: your-email@example.com  
 🔗 LinkedIn: https://www.linkedin.com/in/your-profile  
