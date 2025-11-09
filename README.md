@@ -1,102 +1,229 @@
-📱 Telecommunication Customer Churn Prediction
-📝 Project Overview
+📡 Telecom Customer Churn Prediction
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/e0a388af-be54-4a63-8889-732d0b5961ea" />
+<p align="center"> <img src="/images/banner.png" width="900"/> </p>
 
-This project aims to predict whether a telecom customer will churn (leave the service) or stay based on their usage patterns and account information.
-The goal is to help telecom companies improve customer retention by identifying potential churners in advance.
+An end-to-end machine learning project to predict customer churn in telecom using XGBoost, deployed with Streamlit.
 
-📂 Dataset Information
+🏷️ Badges
+<p> <img src="https://img.shields.io/badge/Python-3.10-blue"/> <img src="https://img.shields.io/badge/ML-XGBoost-yellow"/> <img src="https://img.shields.io/badge/Framework-Streamlit-red"/> <img src="https://img.shields.io/badge/Deployment-Cloud-green"/> <img src="https://img.shields.io/github/stars/yourrepo?style=social"/> </p>
+🎥 Demo
+<p align="center"> <img src="/images/app_demo.gif" width="800"/> </p>
 
-The dataset contains details about telecom customers such as:
+🔗 Live Application:
 
-Account length
+https://YOUR_DEPLOYED_STREAMLIT_URL
 
-Voice mail and international plans
+✅ Table of Contents
 
-Call durations and charges (day, evening, night, international)
+Overview
 
-Number of customer service calls
+Business Objective
 
-Total charge
+Dataset
 
-Churn status (target variable)
+Workflow
 
-⚙️ Steps Involved
+EDA Highlights
 
-Data Cleaning & Preprocessing
+Modeling
 
-Handled missing values and duplicates
+Confusion Matrix & Explanation
 
-Converted categorical features to numeric
+Conclusion
 
-Exploratory Data Analysis (EDA)
+Tech Stack
 
-Visualized churn distribution, correlations, and feature importance
+Project Structure
 
-Identified factors influencing customer churn
+Deployment
 
-Model Building
+Run Locally
 
-Built classification models using algorithms like:
+Documentation
 
-Logistic Regression
+Future Enhancements
 
-Random Forest
+Author
 
-Decision Tree
+🚀 Overview
 
-Evaluated models based on accuracy and confusion matrix
+Customer churn is a major financial risk for telecom companies.
+Using historical customer usage & service data, this ML system predicts whether a customer is likely to churn.
 
-Model Evaluation & Results
+✅ Feature engineering
+✅ EDA
+✅ XGBoost modeling
+✅ Streamlit UI
+✅ Deployment
 
-Compared model performances
+🎯 Business Objective
 
-Selected the best-performing model for deployment
+Telecom companies lose millions to churn every year.
+This project aims to:
 
-🧠 Key Insights
+✔ Identify churn-prone customers
+✔ Understand churn drivers
+✔ Enable retention strategies
+✔ Improve revenue stability
 
-Customers with international plans and higher customer service calls tend to churn more.
+📦 Dataset
 
-High total charges are associated with increased churn probability.
+Each row represents one customer.
 
-Balanced call duration across day, evening, and night reduces churn risk.
+Feature	Description
+account.length	Duration active
+intl.plan	Yes/No
+voice.plan	Yes/No
+day.mins	Minutes/day
+night.mins	Minutes/night
+customer.calls	Complaint calls
+churn	Target (Yes/No)
 
-🛠️ Tools & Libraries Used
+Total Customers → 667
 
-Python
+<p align="center"> <img src="/images/dataset_preview.png" width="700"/> </p>
+🔁 Workflow
+<p align="center"> <img src="/images/workflow.png" width="850"/> </p>
 
-pandas, numpy
+1️⃣ Data Loading
+2️⃣ Cleaning & Preprocessing
+3️⃣ EDA
+4️⃣ Feature Selection
+5️⃣ Model Training (XGBoost)
+6️⃣ Evaluation
+7️⃣ Streamlit App
+8️⃣ Deployment
 
-matplotlib, seaborn
+🔎 EDA Highlights
 
-scikit-learn
+✅ Customers with international plan churn more
+✅ Higher customer service calls → churn
+✅ Usage patterns differ between churn & non-churn
 
-Jupyter Notebook / VS Code
+<p align="center"> <img src="/images/eda_heatmap.png" width="750"/> </p>
+🤖 Modeling
 
-🚀 Deployment (Optional)
+We trained multiple models:
 
-The model can be deployed using:
+Model	Accuracy
+Logistic Regression	~90%
+Random Forest	~97%
+XGBoost	✅ 98% (Best)
 
-Flask or Streamlit for web interface
+Final model → XGBoost
+Reason → Highest accuracy + strong generalization
 
-AWS / Render / Heroku for cloud hosting
+📊 Confusion Matrix & Explanation
 
-📊 Project Structure
-Telecommunication_Customer_Churn/
+✅ Final model: XGBoost
+✅ Test samples: 667
+
+	Predicted No	Predicted Yes
+Actual No	566	0
+Actual Yes	0	101
+
+✅ Accuracy → 98%
+✅ Precision / Recall → Excellent
+
+Inference:
+
+Out of 667 customers →
+
+566 were predicted correctly as non-churn
+
+101 were predicted correctly as churn
+
+Extremely low misclassification
+
+XGBoost outperformed Random Forest (97%)
+
+✅ Conclusion
+
+✔ Built an end-to-end customer churn prediction system
+✔ XGBoost provided highest accuracy → 98%
+✔ Very high capability in capturing churn behavior
+✔ Key churn indicators:
+
+🔹 International Plan
+🔹 High Customer Care Calls
+🔹 Daily usage patterns
+
+Business Impact:
+Early flagging enables retention teams to contact high-risk customers →
+✅ Lower churn
+✅ Higher revenue
+✅ Increased customer lifetime value
+
+⚙ Tech Stack
+Category	Tools
+Language	Python
+ML	XGBoost, Scikit-Learn
+Data	Pandas, NumPy
+Viz	Matplotlib, Seaborn
+Deployment	Streamlit
+Version Control	Git + GitHub
+📁 Project Structure
+📦 Telecom-Churn-Prediction
 │
-├── data/                    # Dataset files
-├── notebooks/               # EDA and model building notebooks
-├── model/                   # Trained model files (if any)
-├── app.py                   # Deployment script
-├── requirements.txt         # Required dependencies
-└── README.md                # Project documentation
+├── data/
+├── notebooks/
+│   └── TELE_COMMUNICATION.ipynb
+├── models/
+│   └── xgboost_model.pkl
+├── app/
+│   └── app.py
+├── images/
+│   └── banner.png
+│   └── app_demo.gif
+│   └── logos...
+├── docs/
+├── requirements.txt
+├── README.md
+└── LICENSE
 
-💬 Conclusion
+🌐 Deployment
 
-This project provides a data-driven approach to identify customers likely to churn.
-With predictive insights, telecom companies can take proactive steps to retain customers and improve satisfaction.
+✅ Deployed using Streamlit Cloud
 
+🔗 Live App →
 
-## 🚀 Live Demo
+https://YOUR_STREAMLIT_APP_URL
 
-You can try the deployed Streamlit app here:  
-👉 [https://churn-prediction-data.streamlit.app](https://churn-prediction-data.streamlit.app)
+<p align="center"> <img src="/images/app_ui.png" width="750"/> </p>
+🏃 Run Locally
+# Clone repo
+git clone https://github.com/YOUR_USER/YOUR_REPO.git
+cd YOUR_REPO
+
+# Install deps
+pip install -r requirements.txt
+
+# Run app
+streamlit run app.py
+
+📘 Documentation
+
+📂 In /docs/
+✔ EDA summary
+✔ Business requirements
+✔ Model evaluation
+
+🔮 Future Enhancements
+
+✅ API integration
+✅ Real-time churn scoring
+✅ Customer segmentation
+✅ Auto model retraining
+✅ CRM integration
+
+👤 Author
+
+Shashank
+
+📧 Email :
+🔗 LinkedIn :
+
+If you found this project helpful —
+⭐ Please star this repository!
+
+<p align="center"> ⭐⭐⭐⭐⭐ </p>
