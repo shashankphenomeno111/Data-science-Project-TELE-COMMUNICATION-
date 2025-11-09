@@ -1,6 +1,6 @@
 📡 Telecom Customer Churn Prediction
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/e0a388af-be54-4a63-8889-732d0b5961ea" />
-<p align="center"> <img src="/images/banner.png" width="900"/> </p>
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/166e0daa-ecf1-4389-bbd2-d04725ffcf50" />
+
 
 An end-to-end machine learning project to predict customer churn in telecom using XGBoost, deployed with Streamlit.
 
