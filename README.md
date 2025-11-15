@@ -250,7 +250,7 @@ A passionate Data Science enthusiast focused on building real-world predictive M
 Binary classification, and end-to-end product deployments.
 
 📧 Email: your-email@example.com  
-🔗 LinkedIn: https://www.linkedin.com/in/your-profile  
+🔗 LinkedIn:(https://www.linkedin.com/in/shashankdatascientist/)
 
 
 
