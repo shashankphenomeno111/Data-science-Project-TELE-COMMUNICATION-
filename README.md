@@ -1,4 +1,12 @@
 <h1 align="center">
+  <b>📡 TELECOMMUNICATION CUSTOMER CHURN PREDICTOR</b>
+</h1>
+
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/166e0daa-ecf1-4389-bbd2-d04725ffcf50" />
+
+
+<h1 align="center">
   <img src="https://img.shields.io/badge/📡-TELECOM%20CHURN%20ANALYTICS-gradient?style=for-the-badge&labelColor=1a1a2e&color=00d4ff" alt="Telecom Churn Analytics"/>
 </h1>
 
