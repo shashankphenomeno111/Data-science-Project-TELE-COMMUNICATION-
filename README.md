@@ -6,9 +6,13 @@
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/166e0daa-ecf1-4389-bbd2-d04725ffcf50" />
 
 
-<h1 align="center">
-  <img src="https://img.shields.io/badge/📡-TELECOM%20CHURN%20ANALYTICS-gradient?style=for-the-badge&labelColor=1a1a2e&color=00d4ff" alt="Telecom Churn Analytics"/>
-</h1>
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=📡%20Telecom%20Churn%20Analytics&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Predicting%20Customer%20Churn%20with%20XGBoost%20|%2098%25%20Accuracy&descAlignY=52&descSize=18" width="100%"/>
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=3000&pause=1000&color=00D4FF&center=true&vCenter=true&random=false&width=600&lines=🚀+Enterprise-Grade+ML+Dashboard;📊+Interactive+Data+Visualization;🎯+Real-Time+Churn+Prediction;🧠+XGBoost+Powered+Analytics" alt="Typing SVG" />
+</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.10+-3776ab?style=flat-square&logo=python&logoColor=white"/>
@@ -20,7 +24,9 @@
 </p>
 
 <p align="center">
-  <b>🚀 An enterprise-grade machine learning dashboard for predicting customer churn in telecommunications</b>
+  <img src="https://img.shields.io/github/stars/shashankphenomeno111/Data-science-Project-TELE-COMMUNICATION-?style=social" alt="Stars"/>
+  <img src="https://img.shields.io/github/forks/shashankphenomeno111/Data-science-Project-TELE-COMMUNICATION-?style=social" alt="Forks"/>
+  <img src="https://img.shields.io/github/watchers/shashankphenomeno111/Data-science-Project-TELE-COMMUNICATION-?style=social" alt="Watchers"/>
 </p>
 
 <p align="center">
@@ -50,7 +56,50 @@
 
 ---
 
-## 🎯 Overview
+## � Live Demo
+
+<p align="center">
+  <a href="https://churn-prediction-data.streamlit.app/" target="_blank">
+    <img src="https://img.shields.io/badge/🚀_LIVE_DEMO-Click_Here_to_Try!-00d4ff?style=for-the-badge&logoColor=white&labelColor=1a1a2e" alt="Live Demo"/>
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://churn-prediction-data.streamlit.app/">
+    <img src="https://img.shields.io/badge/Streamlit-Deployed-FF4B4B?style=flat-square&logo=streamlit&logoColor=white"/>
+  </a>
+  <img src="https://img.shields.io/badge/Status-Online-00ff88?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Response-Fast-00d4ff?style=flat-square"/>
+</p>
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <h3>🔗 Application URL</h3>
+      <a href="https://churn-prediction-data.streamlit.app/">
+        <code>https://churn-prediction-data.streamlit.app/</code>
+      </a>
+    </td>
+  </tr>
+</table>
+
+<details>
+<summary><b>📸 Dashboard Preview (Click to Expand)</b></summary>
+<br>
+
+| 🏠 Dashboard | 📊 EDA Explorer |
+|:---:|:---:|
+| KPI Cards, Churn Distribution | Correlation Heatmap, Distributions |
+
+| 🎯 Churn Predictor | 🧠 Model Insights |
+|:---:|:---:|
+| Input Form, Confidence Gauge | 98% Accuracy, Feature Importance |
+
+</details>
+
+---
+
+## �🎯 Overview
 
 **Telecom Churn Analytics** is a comprehensive machine learning solution that predicts customer churn with **98% accuracy** using XGBoost. The project features an **interactive Streamlit dashboard** with:
 
@@ -439,32 +488,54 @@ flowchart LR
 ## 👤 Author
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Created%20by-Shashank%20R-00d4ff?style=for-the-badge"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=00D4FF&center=true&vCenter=true&random=false&width=600&lines=Hi+%F0%9F%91%8B%2C+I'm+Shashank+R;Data+Scientist+%7C+ML+Engineer;Building+Real-World+AI+Solutions" alt="Typing SVG" />
 </p>
 
-**Shashank R**  
-Data Scientist | Machine Learning Engineer
-
-Passionate about building real-world predictive ML models, binary classification systems, and end-to-end product deployments.
+<p align="center">
+  <img src="https://img.shields.io/badge/🎓-Data_Science_Enthusiast-6c5ce7?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/🤖-Machine_Learning-00d4ff?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/🚀-End_to_End_Deployment-ff6b6b?style=for-the-badge"/>
+</p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/shashankdatascientist/">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin"/>
+  Passionate about building <b>real-world predictive ML models</b>, binary classification systems, <br>
+  and <b>end-to-end product deployments</b> that solve actual business problems.
+</p>
+
+<br>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/shashankdatascientist/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
-  <a href="https://github.com/shashankphenomeno111">
-    <img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github"/>
+  &nbsp;&nbsp;
+  <a href="https://github.com/shashankphenomeno111" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
   </a>
-  <a href="mailto:your-email@example.com">
-    <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail"/>
+  &nbsp;&nbsp;
+  <a href="https://www.kaggle.com/" target="_blank">
+    <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle"/>
   </a>
+</p>
+
+<br>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=shashankphenomeno111&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="GitHub Stats" width="48%"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=shashankphenomeno111&theme=tokyonight&hide_border=true&background=0D1117" alt="GitHub Streak" width="48%"/>
 </p>
 
 ---
 
 <p align="center">
-  <img src="https://img.shields.io/badge/⭐-Star%20this%20repo%20if%20you%20found%20it%20helpful!-ffd700?style=for-the-badge"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=2000&pause=500&color=FFD700&center=true&vCenter=true&random=false&width=500&lines=%E2%AD%90+Star+this+repo+if+you+found+it+helpful!;%F0%9F%94%A5+Don't+forget+to+fork+and+contribute!" alt="Star Typing" />
 </p>
 
 <p align="center">
-  Made with ❤️ and ☕ | © 2025 All Rights Reserved
+  <img src="https://komarev.com/ghpvc/?username=shashankphenomeno111&label=Profile%20Views&color=00d4ff&style=for-the-badge" alt="Profile Views"/>
 </p>
+
+<p align="center">
+  <sub>Made with ❤️ and ☕ by <b>Shashank R</b> | © 2025 All Rights Reserved</sub>
+</p>
+>
