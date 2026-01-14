@@ -7,12 +7,12 @@
 
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=📡%20Telecom%20Churn%20Analytics&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Predicting%20Customer%20Churn%20with%20XGBoost%20|%2098%25%20Accuracy&descAlignY=52&descSize=18" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Telecom%20Churn%20Analytics&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=35&desc=Predicting%20Customer%20Churn%20with%20XGBoost&descAlignY=55&descSize=18" width="100%"/>
 </p>
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=3000&pause=1000&color=00D4FF&center=true&vCenter=true&random=false&width=600&lines=🚀+Enterprise-Grade+ML+Dashboard;📊+Interactive+Data+Visualization;🎯+Real-Time+Churn+Prediction;🧠+XGBoost+Powered+Analytics" alt="Typing SVG" />
-</p>
+<h3 align="center">
+  🚀 Enterprise-Grade ML Dashboard | 📊 Interactive Visualization | 🎯 98% Accuracy
+</h3>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.10+-3776ab?style=flat-square&logo=python&logoColor=white"/>
@@ -291,22 +291,43 @@ Our exploratory analysis revealed critical churn indicators:
 
 ### 🎯 High-Risk Customer Profile
 
-```mermaid
-mindmap
-  root((🎯 High Risk<br/>Customer))
-    📞 Service Issues
-      4+ support calls
-      Unresolved complaints
-    🌍 International Plan
-      Active subscriber
-      High international usage
-    💰 Charges
-      Above average billing
-      Price sensitivity
-    📱 Usage Patterns
-      Declining usage
-      Irregular patterns
-```
+<table>
+  <tr>
+    <td align="center" colspan="4">
+      <h3>⚠️ High Churn Risk Indicators</h3>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <h4>📞 Service Issues</h4>
+      <ul>
+        <li>4+ support calls</li>
+        <li>Unresolved complaints</li>
+      </ul>
+    </td>
+    <td align="center">
+      <h4>🌍 International Plan</h4>
+      <ul>
+        <li>Active subscriber</li>
+        <li>High intl usage</li>
+      </ul>
+    </td>
+    <td align="center">
+      <h4>💰 High Charges</h4>
+      <ul>
+        <li>Above avg billing</li>
+        <li>Price sensitivity</li>
+      </ul>
+    </td>
+    <td align="center">
+      <h4>📱 Usage Patterns</h4>
+      <ul>
+        <li>Declining usage</li>
+        <li>Irregular patterns</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -487,14 +508,18 @@ flowchart LR
 
 ## 👤 Author
 
+<h3 align="center">
+  👋 Hi, I'm <b>Shashank R</b>
+</h3>
+
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=00D4FF&center=true&vCenter=true&random=false&width=600&lines=Hi+%F0%9F%91%8B%2C+I'm+Shashank+R;Data+Scientist+%7C+ML+Engineer;Building+Real-World+AI+Solutions" alt="Typing SVG" />
+  <b>Data Scientist | Machine Learning Engineer | End-to-End Deployment Specialist</b>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/🎓-Data_Science_Enthusiast-6c5ce7?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/🤖-Machine_Learning-00d4ff?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/🚀-End_to_End_Deployment-ff6b6b?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/🎓_Data_Science-Enthusiast-6c5ce7?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/🤖_Machine-Learning-00d4ff?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/🚀_End_to_End-Deployment-ff6b6b?style=for-the-badge"/>
 </p>
 
 <p align="center">
@@ -520,15 +545,28 @@ flowchart LR
 
 <br>
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=shashankphenomeno111&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="GitHub Stats" width="48%"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=shashankphenomeno111&theme=tokyonight&hide_border=true&background=0D1117" alt="GitHub Streak" width="48%"/>
-</p>
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://img.shields.io/badge/💻_Projects-15+-00d4ff?style=for-the-badge"/>
+    </td>
+    <td align="center">
+      <img src="https://img.shields.io/badge/🌟_Focus-Machine_Learning-ff6b6b?style=for-the-badge"/>
+    </td>
+    <td align="center">
+      <img src="https://img.shields.io/badge/📈_Accuracy-98%25-00ff88?style=for-the-badge"/>
+    </td>
+  </tr>
+</table>
 
 ---
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=2000&pause=500&color=FFD700&center=true&vCenter=true&random=false&width=500&lines=%E2%AD%90+Star+this+repo+if+you+found+it+helpful!;%F0%9F%94%A5+Don't+forget+to+fork+and+contribute!" alt="Star Typing" />
+  <img src="https://img.shields.io/badge/⭐_Star_this_repo_if_you_found_it_helpful!-ffd700?style=for-the-badge"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/🔥_Don't_forget_to_fork_and_contribute!-ff6b6b?style=for-the-badge"/>
 </p>
 
 <p align="center">
@@ -536,6 +574,5 @@ flowchart LR
 </p>
 
 <p align="center">
-  <sub>Made with ❤️ and ☕ by <b>Shashank R</b> | © 2025 All Rights Reserved</sub>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
 </p>
->
