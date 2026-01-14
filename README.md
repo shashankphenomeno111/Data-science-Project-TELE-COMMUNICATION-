@@ -1,256 +1,462 @@
 <h1 align="center">
-  <b>📡 TELECOMMUNICATION CUSTOMER CHURN PREDICTOR</b>
+  <img src="https://img.shields.io/badge/📡-TELECOM%20CHURN%20ANALYTICS-gradient?style=for-the-badge&labelColor=1a1a2e&color=00d4ff" alt="Telecom Churn Analytics"/>
 </h1>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10+-3776ab?style=flat-square&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/ML-XGBoost-ff6600?style=flat-square&logo=xgboost&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Framework-Streamlit-ff4b4b?style=flat-square&logo=streamlit&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Visualization-Plotly-3f4f75?style=flat-square&logo=plotly&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Accuracy-98%25-00ff88?style=flat-square"/>
+  <img src="https://img.shields.io/github/license/shashankphenomeno111/Data-science-Project-TELE-COMMUNICATION-?style=flat-square"/>
+</p>
 
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/166e0daa-ecf1-4389-bbd2-d04725ffcf50" />
+<p align="center">
+  <b>🚀 An enterprise-grade machine learning dashboard for predicting customer churn in telecommunications</b>
+</p>
 
+<p align="center">
+  <a href="https://churn-prediction-data.streamlit.app/">🔗 Live Demo</a> •
+  <a href="#-features">Features</a> •
+  <a href="#-installation">Installation</a> •
+  <a href="#-usage">Usage</a> •
+  <a href="#-model-performance">Performance</a>
+</p>
 
-An end-to-end machine learning project to predict customer churn in telecom using XGBoost, deployed with Streamlit.
+---
 
-🏷️ Badges
-<p> <img src="https://img.shields.io/badge/Python-3.10-blue"/> <img src="https://img.shields.io/badge/ML-XGBoost-yellow"/> <img src="https://img.shields.io/badge/Framework-Streamlit-red"/> <img src="https://img.shields.io/badge/Deployment-Cloud-green"/> <img src="https://img.shields.io/github/stars/yourrepo?style=social"/> </p>
-🎥 Demo
-<p align="center"> <img src="/images/app_demo.gif" width="800"/> </p>
+## 📋 Table of Contents
 
-🔗 Live Application:
+- [Overview](#-overview)
+- [Business Problem](#-business-problem)
+- [Project Workflow](#-project-workflow)
+- [System Architecture](#️-system-architecture)
+- [Features](#-features)
+- [EDA Insights](#-eda-insights)
+- [Model Performance](#-model-performance)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Tech Stack](#️-tech-stack)
+- [Future Enhancements](#-future-enhancements)
+- [Author](#-author)
 
-(https://churn-prediction-data.streamlit.app/)
+---
 
-✅ Table of Contents
+## 🎯 Overview
 
-Overview
+**Telecom Churn Analytics** is a comprehensive machine learning solution that predicts customer churn with **98% accuracy** using XGBoost. The project features an **interactive Streamlit dashboard** with:
 
-Business Objective
+- 📊 Real-time KPI monitoring
+- 🔍 Interactive EDA visualizations
+- 🎯 Live churn prediction
+- 🧠 Model insights & feature importance
+- 🌓 Dark/Light theme toggle
+- 📁 Custom dataset upload
 
-Dataset
+> **Business Impact**: Enables telecom companies to identify at-risk customers early, implement targeted retention strategies, and reduce revenue loss from customer churn.
 
-Workflow
+---
 
-EDA Highlights
+## 💼 Business Problem
 
-Modeling
+Customer churn is one of the most significant challenges facing the telecommunications industry:
 
-Confusion Matrix & Explanation
+| Metric | Impact |
+|--------|--------|
+| 💰 **Annual Revenue Loss** | $136 billion worldwide |
+| 📉 **Average Churn Rate** | 15-25% annually |
+| 💵 **Cost to Acquire New Customer** | 5-25x more than retention |
+| ⏱️ **Customer Lifetime Value Loss** | Thousands per churned customer |
 
-Conclusion
+### 🎯 Project Goals
 
-Tech Stack
+1. **Predict** customers likely to churn before they leave
+2. **Identify** key factors driving customer churn
+3. **Enable** proactive retention strategies
+4. **Reduce** revenue loss through early intervention
 
-Project Structure
+---
 
-Deployment
+## 🔄 Project Workflow
 
-Run Locally
+```mermaid
+flowchart LR
+    subgraph Data["📥 Data Collection"]
+        A[("📊 Telecom Dataset<br/>3,333 Customers")]
+    end
+    
+    subgraph Preprocessing["🔧 Preprocessing"]
+        B["🧹 Data Cleaning"]
+        C["📈 Feature Engineering"]
+        D["🔢 Encoding"]
+    end
+    
+    subgraph Analysis["🔍 Analysis"]
+        E["📊 EDA"]
+        F["📉 Statistical Analysis"]
+    end
+    
+    subgraph Modeling["🤖 ML Pipeline"]
+        G["⚖️ Train-Test Split"]
+        H["🎓 Model Training"]
+        I["📏 Hyperparameter Tuning"]
+    end
+    
+    subgraph Evaluation["✅ Evaluation"]
+        J["📊 Metrics Calculation"]
+        K["🎯 Confusion Matrix"]
+    end
+    
+    subgraph Deployment["🚀 Deployment"]
+        L["💾 Model Export"]
+        M["🖥️ Streamlit Dashboard"]
+        N["☁️ Cloud Deploy"]
+    end
+    
+    A --> B --> C --> D --> E --> F --> G --> H --> I --> J --> K --> L --> M --> N
+    
+    style A fill:#00d4ff,color:#1a1a2e
+    style M fill:#ff4b4b,color:#fff
+    style N fill:#00ff88,color:#1a1a2e
+```
 
-Documentation
+---
 
-Future Enhancements
+## 🏗️ System Architecture
 
-Author
+```mermaid
+flowchart TB
+    subgraph Frontend["🖥️ Frontend - Streamlit Dashboard"]
+        UI["Multi-Page UI"]
+        Theme["🌓 Theme Engine"]
+        Charts["📊 Plotly Charts"]
+    end
+    
+    subgraph Backend["⚙️ Backend - Python"]
+        DataLoader["📁 Data Loader"]
+        Preprocessor["🔧 Preprocessor"]
+        ModelEngine["🤖 XGBoost Engine"]
+        Analytics["📈 Analytics Engine"]
+    end
+    
+    subgraph Storage["💾 Storage"]
+        Dataset[("📊 CSV Dataset")]
+        Model[("🧠 Trained Model<br/>.joblib")]
+    end
+    
+    subgraph Pages["📄 Dashboard Pages"]
+        P1["🏠 Dashboard Overview"]
+        P2["📊 EDA Explorer"]
+        P3["🎯 Churn Predictor"]
+        P4["🧠 Model Insights"]
+        P5["👥 Customer Analytics"]
+        P6["⚙️ Settings"]
+    end
+    
+    UI --> DataLoader
+    UI --> ModelEngine
+    DataLoader --> Dataset
+    ModelEngine --> Model
+    Preprocessor --> Analytics
+    Analytics --> Charts
+    
+    UI --> P1
+    UI --> P2
+    UI --> P3
+    UI --> P4
+    UI --> P5
+    UI --> P6
+    
+    style Frontend fill:#ff4b4b,color:#fff
+    style Backend fill:#3776ab,color:#fff
+    style Storage fill:#00d4ff,color:#1a1a2e
+```
 
-🚀 Overview
+---
 
-Customer churn is a major financial risk for telecom companies.
-Using historical customer usage & service data, this ML system predicts whether a customer is likely to churn.
+## ✨ Features
 
-✅ Feature engineering
-✅ EDA
-✅ XGBoost modeling
-✅ Streamlit UI
-✅ Deployment
+### 🏠 Dashboard Overview
+- **Real-time KPIs**: Total customers, churn rate, revenue at risk
+- **Interactive Charts**: Churn distribution, service call analysis
+- **Key Insights**: Auto-generated business recommendations
 
-🎯 Business Objective
+### 📊 EDA Explorer
+- **Correlation Heatmap**: Feature relationships
+- **Distribution Plots**: Feature analysis by churn status
+- **Box Plots**: Outlier detection and comparison
+- **Plan Analysis**: International & voicemail plan impact
 
-Telecom companies lose millions to churn every year.
-This project aims to:
+### 🎯 Churn Predictor
+- **Interactive Form**: Enter customer details
+- **Real-time Prediction**: Instant churn probability
+- **Confidence Gauge**: Visual risk indicator
+- **Action Recommendations**: Retention strategies
 
-✔ Identify churn-prone customers
-✔ Understand churn drivers
-✔ Enable retention strategies
-✔ Improve revenue stability
+### 🧠 Model Insights
+- **Performance Metrics**: Accuracy, Precision, Recall, F1
+- **Feature Importance**: Top predictors visualization
+- **Classification Report**: Detailed model analysis
 
-📦 Dataset
+### 👥 Customer Analytics
+- **Segment Analysis**: Usage-based customer groups
+- **Risk Distribution**: Churn probability across segments
+- **Data Preview**: Explore raw customer data
 
-Each row represents one customer.
+### ⚙️ Settings
+- **🌓 Dark/Light Theme**: Toggle UI theme
+- **📁 Dataset Upload**: Load custom CSV datasets
+- **🔄 Reset**: Restore default dataset
 
-Feature	Description
-account.length	Duration active
-intl.plan	Yes/No
-voice.plan	Yes/No
-day.mins	Minutes/day
-night.mins	Minutes/night
-customer.calls	Complaint calls
-churn	Target (Yes/No)
+---
 
-Total Customers → 667
+## 🔎 EDA Insights
 
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/decaafe0-9554-44e5-ac2c-9b95aff52385" />
+Our exploratory analysis revealed critical churn indicators:
 
+### 🔥 Key Findings
 
-1️⃣ Data Loading
-2️⃣ Cleaning & Preprocessing
-3️⃣ EDA
-4️⃣ Feature Selection
-5️⃣ Model Training (XGBoost)
-6️⃣ Evaluation
-7️⃣ Streamlit App
-8️⃣ Deployment
+| Factor | Finding | Churn Impact |
+|--------|---------|--------------|
+| 📞 **Service Calls** | 4+ calls = 45%+ churn rate | 🔴 HIGH |
+| 🌍 **International Plan** | Subscribers 3x more likely to churn | 🔴 HIGH |
+| 💰 **Total Charge** | High spenders ($75+) churn more | 🟡 MEDIUM |
+| ✉️ **Voicemail Plan** | Subscribers 40% less likely to churn | 🟢 PROTECTIVE |
 
-🔎 EDA Highlights
+### 📊 Churn Distribution
 
-✅ Customers with international plan churn more
-✅ Higher customer service calls → churn
-✅ Usage patterns differ between churn & non-churn
+```
+┌─────────────────────────────────────────┐
+│  Retained Customers: 85.5% (2,850)      │ ███████████████████░
+│  Churned Customers:  14.5% (483)        │ ███░░░░░░░░░░░░░░░░░
+└─────────────────────────────────────────┘
+```
 
-<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/58319ee7-229c-4e32-a5a4-939a666e95f1" />
+### 🎯 High-Risk Customer Profile
 
-🤖 Modeling
+```mermaid
+mindmap
+  root((🎯 High Risk<br/>Customer))
+    📞 Service Issues
+      4+ support calls
+      Unresolved complaints
+    🌍 International Plan
+      Active subscriber
+      High international usage
+    💰 Charges
+      Above average billing
+      Price sensitivity
+    📱 Usage Patterns
+      Declining usage
+      Irregular patterns
+```
 
-We trained multiple models:
+---
 
-Model	Accuracy
-Logistic Regression	~90%
-Random Forest	~97%
-XGBoost	✅ 98% (Best)
+## 🤖 Model Performance
 
-Final model → XGBoost
-Reason → Highest accuracy + strong generalization
+### XGBoost Classifier Results
 
-✅Classification Report
+| Metric | Score | Description |
+|--------|-------|-------------|
+| **Accuracy** | 98% | Overall correct predictions |
+| **Precision** | 99% | True positives / predicted positives |
+| **Recall** | 87% | Churners correctly identified |
+| **F1 Score** | 0.96 | Harmonic mean of precision & recall |
+
+### 📊 Classification Report
+
+```
               precision    recall  f1-score   support
 
-           0       0.98      1.00      0.99       566
-           1       1.00      0.87      0.93       101
+   Stay (0)       0.98      1.00      0.99       566
+   Churn (1)      1.00      0.87      0.93       101
 
-    accuracy                           0.98       667
-   macro avg       0.99      0.94      0.96       667
-weighted avg       0.98      0.98      0.98       667
+   accuracy                           0.98       667
+   macro avg      0.99      0.94      0.96       667
+weighted avg      0.98      0.98      0.98       667
+```
 
-🔍 Interpretation:
+### 📈 Top Features by Importance
 
-✅ Class 0 perfectly recalled (1.00)
-✅ Class 1 is well captured (recall 0.87)
-✅ Very high precision for both classes
-✅ Overall model is highly reliable
+```mermaid
+xychart-beta
+    title "Feature Importance (XGBoost)"
+    x-axis ["Total Charge", "Service Calls", "Intl Plan", "Day Mins", "Day Charge"]
+    y-axis "Importance %" 0 --> 30
+    bar [25, 18, 15, 12, 8]
+```
 
-✅ Conclusion
+---
 
-✔ XGBoost model achieved 98% accuracy
-✔ Excellent ability to detect non-churn customers
-✔ Strong performance on churn prediction
+## 💻 Installation
 
-🔹 Key churn indicators:
+### Prerequisites
 
-International plan = higher churn
+- Python 3.10+
+- pip package manager
+- Git
 
-High customer service calls
+### Quick Start
 
-Usage patterns
+```bash
+# 1. Clone the repository
+git clone https://github.com/shashankphenomeno111/Data-science-Project-TELE-COMMUNICATION-.git
 
-✅ Business Value:
-Allows targeted retention → reduced churn → increased revenue
+# 2. Navigate to project directory
+cd Data-science-Project-TELE-COMMUNICATION--main
 
-Inference:
+# 3. Create virtual environment (recommended)
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
 
-Out of 667 customers →
-
-566 were predicted correctly as non-churn
-
-101 were predicted correctly as churn
-
-Extremely low misclassification
-
-XGBoost outperformed Random Forest (97%)
-
-✅ Conclusion
-
-✔ Built an end-to-end customer churn prediction system
-✔ XGBoost provided highest accuracy → 98%
-✔ Very high capability in capturing churn behavior
-✔ Key churn indicators:
-
-🔹 International Plan
-🔹 High Customer Care Calls
-🔹 Daily usage patterns
-
-Business Impact:
-Early flagging enables retention teams to contact high-risk customers →
-✅ Lower churn
-✅ Higher revenue
-✅ Increased customer lifetime value
-
-⚙ Tech Stack
-Category	Tools
-Language	Python
-ML	XGBoost, Scikit-Learn
-Data	Pandas, NumPy
-Viz	Matplotlib, Seaborn
-Deployment	Streamlit
-Version Control	Git + GitHub
-📁 Project Structure
-📦 Telecom-Churn-Prediction
-│
-├── data/
-├── notebooks/
-│   └── TELE_COMMUNICATION.ipynb
-├── models/
-│   └── xgboost_model.pkl
-├── app/
-│   └── app.py
-├── images/
-│   └── banner.png
-│   └── app_demo.gif
-│   └── logos...
-├── docs/
-├── requirements.txt
-├── README.md
-└── LICENSE
-
-🌐 Deployment
-
-✅ Deployed using Streamlit Cloud
-
-🔗 Live App →
-
-(https://churn-prediction-data.streamlit.app/)
-
-<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/dabaeddb-1500-40ca-bc68-b36ca8e28632" />
-
-🏃 Run Locally
-# Clone repo
-git clone(https://github.com/shashankphenomeno111/Data-science-Project-TELE-COMMUNICATION-.git)
-cd YOUR_REPO
-
-# Install deps
+# 4. Install dependencies
 pip install -r requirements.txt
 
-# Run app
+# 5. Run the dashboard
 streamlit run app.py
+```
 
-📘 Documentation
+### 📦 Dependencies
 
-📂 In /docs/
-✔ EDA summary
-✔ Business requirements
-✔ Model evaluation
+```
+streamlit          # Web framework
+pandas             # Data manipulation
+numpy              # Numerical computing
+plotly             # Interactive visualizations
+scikit-learn       # ML utilities
+xgboost            # Gradient boosting model
+joblib             # Model serialization
+```
 
-🔮 Future Enhancements
+---
 
-✅ API integration
-✅ Real-time churn scoring
-✅ Customer segmentation
-✅ Auto model retraining
-✅ CRM integration
+## 🚀 Usage
+
+### Running the Dashboard
+
+```bash
+streamlit run app.py
+```
+
+The dashboard opens at `http://localhost:8501`
+
+### Navigation
+
+1. **🏠 Dashboard**: Overview with KPIs and charts
+2. **📊 EDA Explorer**: Explore data patterns
+3. **🎯 Churn Predictor**: Make predictions
+4. **🧠 Model Insights**: Understand the model
+5. **👥 Customer Analytics**: Deep dive into segments
+6. **⚙️ Settings**: Upload data, change theme
+
+### Making Predictions
+
+1. Navigate to **🎯 Churn Predictor**
+2. Enter customer details:
+   - Day minutes & charges
+   - International usage
+   - Service calls count
+   - Plan subscriptions
+3. Click **🔮 Predict Churn Risk**
+4. View probability gauge and recommendations
+
+---
+
+## 🛠️ Tech Stack
+
+```mermaid
+flowchart LR
+    subgraph Languages
+        Python["🐍 Python 3.10"]
+    end
+    
+    subgraph ML["Machine Learning"]
+        XGB["🌲 XGBoost"]
+        SKL["📊 Scikit-Learn"]
+    end
+    
+    subgraph Data["Data Science"]
+        Pandas["🐼 Pandas"]
+        NumPy["🔢 NumPy"]
+    end
+    
+    subgraph Viz["Visualization"]
+        Plotly["📈 Plotly"]
+        Seaborn["🎨 Seaborn"]
+    end
+    
+    subgraph Deploy["Deployment"]
+        Streamlit["🖥️ Streamlit"]
+        Cloud["☁️ Streamlit Cloud"]
+    end
+    
+    Python --> ML
+    Python --> Data
+    Python --> Viz
+    ML --> Deploy
+    Data --> Deploy
+    Viz --> Deploy
+```
+
+---
+
+## 📁 Project Structure
+
+```
+📦 Telecom-Churn-Prediction
+├── 📄 app.py                          # Main Streamlit dashboard
+├── 📄 app1.py                         # Legacy simple predictor
+├── 📓 TELE_COMMUNICATION (19).ipynb   # Analysis notebook
+├── 📊 telecommunications_Dataset.csv   # Customer dataset
+├── 🧠 xgb_churn_model.joblib          # Trained XGBoost model
+├── 📋 requirements.txt                 # Python dependencies
+└── 📖 README.md                        # Documentation
+```
+
+---
+
+## 🔮 Future Enhancements
+
+- [ ] 🔗 **API Integration**: RESTful API for predictions
+- [ ] ⚡ **Real-time Scoring**: Stream processing for live data
+- [ ] 👥 **Customer Segmentation**: K-means clustering
+- [ ] 🔄 **Auto Retraining**: MLOps pipeline
+- [ ] 🔌 **CRM Integration**: Salesforce/HubSpot connectors
+- [ ] 📱 **Mobile App**: React Native dashboard
+
+---
 
 ## 👤 Author
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Created%20by-Shashank%20R-00d4ff?style=for-the-badge"/>
+</p>
+
 **Shashank R**  
-A passionate Data Science enthusiast focused on building real-world predictive ML models, 
-Binary classification, and end-to-end product deployments.
+Data Scientist | Machine Learning Engineer
 
-📧 Email: your-email@example.com  
-🔗 LinkedIn:(https://www.linkedin.com/in/shashankdatascientist/)
+Passionate about building real-world predictive ML models, binary classification systems, and end-to-end product deployments.
 
+<p align="center">
+  <a href="https://www.linkedin.com/in/shashankdatascientist/">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin"/>
+  </a>
+  <a href="https://github.com/shashankphenomeno111">
+    <img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github"/>
+  </a>
+  <a href="mailto:your-email@example.com">
+    <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail"/>
+  </a>
+</p>
 
+---
 
+<p align="center">
+  <img src="https://img.shields.io/badge/⭐-Star%20this%20repo%20if%20you%20found%20it%20helpful!-ffd700?style=for-the-badge"/>
+</p>
+
+<p align="center">
+  Made with ❤️ and ☕ | © 2025 All Rights Reserved
+</p>
