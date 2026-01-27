@@ -1,11 +1,3 @@
-<h1 align="center">
-  <b>📡 TELECOMMUNICATION CUSTOMER CHURN PREDICTOR</b>
-</h1>
-
-
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/166e0daa-ecf1-4389-bbd2-d04725ffcf50" />
-
-
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Telecom%20Churn%20Analytics&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=35&desc=Predicting%20Customer%20Churn%20with%20XGBoost&descAlignY=55&descSize=18" width="100%"/>
 </p>
@@ -56,7 +48,7 @@
 
 ---
 
-## � Live Demo
+## 🎯 Live Demo
 
 <p align="center">
   <a href="https://churn-prediction-data.streamlit.app/" target="_blank">
@@ -99,7 +91,7 @@
 
 ---
 
-## �🎯 Overview
+## 🎯 Overview
 
 **Telecom Churn Analytics** is a comprehensive machine learning solution that predicts customer churn with **98% accuracy** using XGBoost. The project features an **interactive Streamlit dashboard** with:
 
